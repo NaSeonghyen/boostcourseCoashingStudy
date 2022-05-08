@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>1주차 퀴즈미션</title>
+  </head>
+  <body>
+    <h1>미션 1. 웹 개발자들은 새로운 개념을 학습할 때, 신뢰할만한 리소스인 MDN Web Docs를 주로 참고합니다. Mozilla 재단이 만든 MDN Web Docs에서 HTML을 어떻게 정의하고 있는지 읽어보시고 아래 빈칸을 채워보세요.</h1>
+    HTML은 <strong>HyperText Markup Language</strong>의 약자로 웹을 이루는 가장 기초적인 구성 요소입니다. 웹페이지의 모양을 꾸미는데 쓰는 CSS와 기능, 동작을 구현하는데 쓰는 JavaScript와 함께 쓰입니다.<br>
+    HTML 요소는 <strong>태그</strong>를 사용해서 다른 텍스트와 구분합니다. <strong>태그</strong>는 여는 홀화살괄호(<>)로 감쌉니다.<br>
+    프론트엔드 개발자는 <strong>html, css, javascript</strong>를 사용해 웹을 만듭니다.<br>
+
+    <h1>미션 2. 다음 글의 밑줄에 어떤 단어가 들어갈지 적어보세요!</h1>
+    HTML 태그엔 <strong>속성</strong>을 추가할 수 있습니다. <strong>속성</strong>은 태그에 추가 정보를 제공하거나 태그의 동작이나 표현을 제어할 수 있게 해줍니다.<br>
+    속성은 이름과 값으로 이루어져 있습니다. 속성값은 <strong>""</strong>와 <strong>''</strong>로 감싸 표현합니다.<br>
+    한 태그에 여러 속성을 선언할 수 있는데, 여러 속성을 선언할 때는 <strong>공백</strong>으로 구분해서 사용합니다.<br>
+
+    <h1>미션 3. 다음 HTML은 의도한 대로 동작하지 않습니다. 어떻게 수정할 수 있을지 적어보세요! </h1>
+    <h2>- 이름만 굵은 색으로 표시하고, 제목과 텍스트 사이에 빈 줄을 넣고 싶음.</h2>
+
+    <h1>자기소개</h1>
+    <span>
+      <br>
+      안녕하세요. 대한민국에 사는 <strong>이보라</strong>입니다.
+    </span>
+
+    <h1>미션 4.로그인 페이지 하나를 만들려면 다양한 태그가 사용됩니다. 네이버 로그인 페이지에 접속 후, 개발자 도구를 열어 어떤 태그가 쓰이고 있는지 확인해 보세요. 그리고 각 요소별로 어떤 태그가 사용되고 있는지 확인하고 적어보세요!</h1>
+    <h2>1.위쪽의 NAVER 로고</h2>
+    <a href="https://www.naver.com" class="logo">
+      <h1 class="blind">NAVER</h1>
+    </a>
+    <br>
+    - 사용된 태그 : a, h1 태그
+    <h2>2.아이디와 비밀번호를 입력하는 네모 상자</h2>
+    <div class="input_row" id="id_line">
+      <div class="icon_cell" id="id_cell">
+        <span class="icon_id">
+          <span class="blind">아이디</span>
+        </span>
+      </div>
+      <input type="text" id="id" name="id" placeholder="아이디" title="아이디" class="input_text" maxlength="41" value="">
+      <span role="button" class="btn_delete" id="id_clear" style="display: block;">
+        <span class="icon_delete">
+          <span class="blind">삭제</span>
+        </span>
+      </span>
+    </div>
+    <br>
+    - 사용된 태그 : div, span, input
+    <h2>3.초록색 로그인 버튼</h2>
+    <button type="submit" class="btn_login" id="log.login">
+        <span class="btn_text">로그인</span>
+    </button>
+    <br>
+    - 사용된 태그 : button, span
+  </body>
+</html>
